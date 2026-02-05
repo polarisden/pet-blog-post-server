@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import connectionPool from "./utils/db.mjs";
 
+// เพิ่มหลัง import
 const app = express();
 const port = process.env.PORT || 4001;
 
@@ -11,7 +12,7 @@ app.use(
     origin: [
       "http://localhost:5173", // Frontend local (Vite)
       "http://localhost:3000", // Frontend local (React แบบอื่น)
-      "https://pet-blog-post-server-demo.vercel.app/", // Frontend ที่ Deploy แล้ว
+      "https://pet-blog-post-server-connect.vercel.app/", // Frontend ที่ Deploy แล้ว
     ],
     methods: ["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
   })

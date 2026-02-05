@@ -9,4 +9,6 @@ const connectionPool = new Pool({
 ,
 });
 
+console.log("Connection String:", process.env.CONNECTION_STRING ? "✓ Loaded" : "✗ Not Found");
+
 export default connectionPool;
